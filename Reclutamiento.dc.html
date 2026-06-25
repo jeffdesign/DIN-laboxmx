@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaborMX · Reclutamiento Especializado</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/labor.css">
+</head>
+<body class="page-reclutamiento">
+<div class="cursor-dot"></div>
+<div class="cursor-follower"></div>
+<div class="scroll-progress"></div>
+
+<div data-thankyou-flash>
+  <div style="text-align:center;color:#fff;animation:flashpop .6s cubic-bezier(.16,1,.3,1) both">
+    <div style="width:74px;height:74px;border-radius:50%;border:2px solid rgba(61,125,255,.6);border-top-color:#3d7dff;margin:0 auto 22px;animation:spin .9s linear infinite"></div>
+    <div style="font-family:'Schibsted Grotesk';font-size:22px;font-weight:700" data-en="Preparing your space…">Preparando tu espacio…</div>
+    <div style="opacity:.6;font-size:14px;margin-top:6px" data-en="Connecting you with a specialist">Te conectamos con un especialista</div>
+  </div>
+</div>
+
+<a href="#prefiltro" data-floating-cta style="display:inline-flex;align-items:center;gap:9px;background:#3d7dff;color:#fff;font-weight:600;font-size:14px;padding:14px 22px;border-radius:999px;text-decoration:none">
+  <span data-en="Request candidates">Solicitar candidatos</span>
+  <span style="font-size:16px">→</span>
+</a>
+
+<!-- ============ REDIRECT BANNER ============ -->
+<div data-banner style="background:#0c1430;color:#cdd6ec;font-size:13.5px;text-align:center;padding:9px 44px 9px 18px;position:relative;letter-spacing:.01em">
+  <span data-en="Looking for high-volume operational staffing? We cover that with our BPO / RPO service">¿Buscas volumen de personal operativo? Ese perfil lo cubrimos con nuestro servicio BPO / RPO</span>
+  <a href="BPO.dc.html" style="color:#7fa8ff;font-weight:600;text-decoration:none;margin-left:6px">→ <span data-en="View BPO page">Ver página BPO</span></a>
+  <button data-banner-close aria-label="Cerrar" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:#7c87a6;font-size:18px;cursor:pointer;line-height:1">×</button>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav data-nav style="position:sticky;top:0;z-index:9500;padding:14px clamp(14px,4vw,40px)">
+  <div class="navshell" style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;background:rgba(255,255,255,.6);backdrop-filter:blur(16px);border:1px solid rgba(16,24,60,.06);border-radius:999px;padding:11px 12px 11px 22px">
+    <a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0">
+      <img src="assets/labormx-color.png" alt="Labor Mexicana" style="height:30px;width:auto">
+    </a>
+    <div class="nav-links" style="align-items:center;gap:28px;font-size:14.5px;font-weight:500;color:#3a4760">
+      <a href="#perfiles" style="text-decoration:none" class="cursor-target" data-en="Profiles">Perfiles</a>
+      <a href="#porque" style="text-decoration:none" class="cursor-target" data-en="Why us">Por qué</a>
+      <a href="#proceso" style="text-decoration:none" class="cursor-target" data-en="Process">Proceso</a>
+      <a href="#resultados" style="text-decoration:none" class="cursor-target" data-en="Results">Resultados</a>
+    </div>
+    <div class="nav-cta-wrap" style="align-items:center;gap:10px;flex-shrink:0">
+      <button data-lang-toggle class="cursor-target" style="display:flex;align-items:center;gap:5px;background:rgba(16,24,60,.05);border:1px solid rgba(16,24,60,.08);border-radius:999px;padding:8px 12px;font-size:12.5px;font-weight:600;color:#16234d;cursor:pointer;font-family:inherit">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        <span data-lang-label>ES</span>
+      </button>
+      <a href="#prefiltro" class="nav-cta-desk cursor-target" style="background:#16234d;color:#fff;font-weight:600;font-size:14px;padding:11px 20px;border-radius:999px;text-decoration:none;white-space:nowrap" data-en="Request candidates">Solicitar candidatos</a>
+      <button data-burger aria-label="Menú" style="background:none;border:none;width:38px;height:38px;align-items:center;justify-content:center;cursor:pointer"><span class="burger-x"></span></button>
+    </div>
+  </div>
+</nav>
+
+<div data-mobile-menu>
+  <a href="#perfiles" style="color:#fff;font-family:'Schibsted Grotesk';font-size:30px;text-decoration:none;padding:10px 0" data-en="Profiles">Perfiles</a>
+  <a href="#porque" style="color:#fff;font-family:'Schibsted Grotesk';font-size:30px;text-decoration:none;padding:10px 0" data-en="Why us">Por qué Labor</a>
+  <a href="#proceso" style="color:#fff;font-family:'Schibsted Grotesk';font-size:30px;text-decoration:none;padding:10px 0" data-en="Process">Proceso</a>
+  <a href="#resultados" style="color:#fff;font-family:'Schibsted Grotesk';font-size:30px;text-decoration:none;padding:10px 0" data-en="Results">Resultados</a>
+  <a href="#prefiltro" style="margin-top:18px;background:#3d7dff;color:#fff;font-weight:600;font-size:17px;padding:15px 26px;border-radius:999px;text-decoration:none;text-align:center" data-en="Request candidates">Solicitar candidatos →</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="labormx-reference-hero" style="position:relative;background:#ffffff;overflow:hidden">
+  <canvas data-particles data-color="61,125,255" style="position:absolute;inset:0;width:100%;height:100%;opacity:.7;pointer-events:none"></canvas>
+  <div style="position:absolute;top:-180px;right:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(61,125,255,.16),transparent 65%);pointer-events:none"></div>
+  <div style="position:absolute;bottom:-220px;left:-160px;width:540px;height:540px;border-radius:50%;background:radial-gradient(circle,rgba(22,35,77,.08),transparent 65%);pointer-events:none"></div>
+  <div class="hero-grid nexto-inspired hero-reference-v5" data-tilt-area style="position:relative;max-width:1180px;margin:0 auto;padding:clamp(40px,6vw,84px) clamp(20px,5vw,40px) clamp(56px,7vw,96px);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(34px,5vw,64px);align-items:center">
+    <!-- left copy -->
+    <div>
+      <div class="fade-up" style="display:inline-flex;align-items:center;gap:9px;background:rgba(61,125,255,.09);border:1px solid rgba(61,125,255,.22);color:#2b56b8;font-size:13px;font-weight:600;padding:8px 15px;border-radius:999px;opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .8s cubic-bezier(.16,1,.3,1)">
+        <span style="width:7px;height:7px;border-radius:50%;background:#3d7dff;box-shadow:0 0 0 4px rgba(61,125,255,.2)"></span>
+        <span data-en="Specialized recruitment · Automotive manufacturing">Reclutamiento especializado · Manufactura automotriz</span>
+      </div>
+      
+      <div class="brand-hero-orbit" data-pipeline>
+        <div class="brand-hero-grid"></div>
+        <div class="icon-pipeline">
+          <svg class="beam-svg" viewBox="0 0 520 140" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <filter class="beam-glow" id="glow"><feGaussianBlur stdDeviation="2" result="coloredBlur"/><feComposite in="SourceGraphic" in2="coloredBlur" operator="over"/></filter>
+              <linearGradient class="beam-gradient" id="beam-gradient" gradientUnits="userSpaceOnUse" x1="0%" x2="10%" y1="0%" y2="0%">
+                <stop offset="0%" stop-color="#e8a23a" stop-opacity="0"/>
+                <stop offset="20%" stop-color="#e8a23a" stop-opacity=".85"/>
+                <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+                <stop offset="80%" stop-color="#7fa8ff" stop-opacity=".85"/>
+                <stop offset="100%" stop-color="#7fa8ff" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path class="beam-path beam-glow-path" d="" fill="none" stroke="url(#beam-gradient)" stroke-width="2" filter="url(#glow)" opacity=".6"/>
+            <path class="beam-path beam-core-path" d="" fill="none" stroke="url(#beam-gradient)" stroke-width=".9" opacity="1"/>
+          </svg>
+          <div class="icon-node node-light-right pipeline-node-stack" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="pipeline-line"></div>
+          <div class="pipeline-center-wrap"><div class="splash"></div><div class="icon-node-center pipeline-node-center"><img src="assets/labormx-white.png" alt="LaborMX"></div></div>
+          <div class="pipeline-line right"></div>
+          <div class="icon-node node-light-left pipeline-node-shield" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        </div>
+        <div class="pipeline-label"><strong>TALENTO</strong> · NETWORKING · TERNA · GARANTÍA</div>
+      </div>
+<h1 class="split-title" style="font-size:clamp(31px,4.6vw,54px);margin-top:22px;color:#0e1730">
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="Quality &amp; engineering talent" style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease,opacity .9s ease">Perfiles de calidad e ingeniería</span></span>
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="your HR can&apos;t find." style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1) .09s,filter .9s ease .09s,opacity .9s ease .09s">que tu RH no encuentra.</span></span>
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="At a cost you can actually pay." style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1) .18s,filter .9s ease .18s,opacity .9s ease .18s;color:#3d7dff">Al costo que sí puedes pagar.</span></span>
+      </h1>
+      <p class="fade-up" style="margin-top:22px;font-size:clamp(15px,1.5vw,17.5px);color:#46506a;max-width:520px;opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .8s cubic-bezier(.16,1,.3,1) .15s" data-en="We&apos;ve run quality inside automotive plants for 19 years. We know these professionals because we work with them every day — so we recruit them faster, and for less, than a traditional headhunter.">Llevamos 19 años operando calidad dentro de plantas automotrices. Conocemos a estos profesionales porque trabajamos con ellos todos los días. Eso nos permite reclutarlos más rápido y a menor costo que un headhunter tradicional.</p>
+      <div class="fade-up" style="display:flex;flex-wrap:wrap;gap:13px;margin-top:30px;opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .8s cubic-bezier(.16,1,.3,1) .25s">
+        <a href="#prefiltro" class="cursor-target" style="display:inline-flex;align-items:center;gap:10px;background:#3d7dff;color:#fff;font-weight:600;font-size:15.5px;padding:16px 28px;border-radius:999px;text-decoration:none;box-shadow:0 12px 34px rgba(61,125,255,.36);transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s" data-en="Request candidates">Solicitar candidatos →</a>
+        <a href="#porque" class="cursor-target" style="display:inline-flex;align-items:center;gap:9px;background:#fff;color:#16234d;font-weight:600;font-size:15.5px;padding:16px 26px;border-radius:999px;text-decoration:none;border:1px solid #d9dfeb;transition:border-color .3s" data-en="Why we find them first">Por qué los encontramos primero</a>
+      </div>
+      <p class="fade-up" style="margin-top:18px;font-size:13px;color:#8a93a8;opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .8s cubic-bezier(.16,1,.3,1) .32s" data-en="Specialist response in under 24 hours · No commitment">Respuesta de un especialista en menos de 24 horas · Sin compromiso</p>
+    </div>
+    <!-- right form -->
+    <div class="hero-formcol" id="prefiltro">
+      <div data-tilt style="position:relative;background:#fff;border:1px solid #e7eaf3;border-radius:24px;padding:clamp(22px,3vw,30px);box-shadow:0 30px 70px rgba(16,24,60,.14);transition:transform .5s cubic-bezier(.16,1,.3,1)">
+        <div class="hero-floatcard" style="position:absolute;top:14px;right:14px;background:#0c1430;color:#fff;border-radius:14px;padding:11px 15px;box-shadow:0 16px 34px rgba(12,20,48,.3);animation:floaty 5s ease-in-out infinite">
+          <div style="font-family:'Schibsted Grotesk';font-size:19px;font-weight:700;color:#7fa8ff">≤24 hrs</div>
+          <div style="font-size:11px;opacity:.7" data-en="response time">tiempo de respuesta</div>
+        </div>
+        <h3 style="font-size:21px;color:#0e1730" data-en="Tell us the position you need">Cuéntanos qué posición necesitas</h3>
+        <p style="font-size:13.5px;color:#69728a;margin-top:7px" data-en="Fill the form and a specialist advisor contacts you in under 24 hours with a plan for your vacancy.">Llena el formulario y un asesor especializado te contactará en menos de 24 horas con un plan para tu vacante.</p>
+        <form data-lead-form data-svc="reclutamiento" style="margin-top:18px;display:flex;flex-direction:column;gap:11px">
+          <input required name="nombre" placeholder="Tu nombre" data-en-ph="Your name" aria-label="Nombre" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#141a2e">
+          <input required type="email" name="correo" placeholder="tunombre@tuempresa.com" data-en-ph="you@yourcompany.com" aria-label="Correo de empresa" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#141a2e">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px">
+            <input required name="empresa" placeholder="Empresa" data-en-ph="Company" aria-label="Empresa" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#141a2e">
+            <input required name="tel" placeholder="+52 55 0000 0000" data-en-ph="+52 55 0000 0000" aria-label="Teléfono o WhatsApp" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#141a2e">
+          </div>
+          <select required name="area" aria-label="Área del puesto" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#46506a">
+            <option value="" disabled selected data-en="Position area">Área del puesto</option>
+            <option data-en="Quality">Calidad</option>
+            <option data-en="Engineering / Manufacturing">Ingeniería / Manufactura</option>
+            <option data-en="Operations / Plant">Operaciones / Planta</option>
+            <option data-en="HR / Recruitment">RH / Reclutamiento</option>
+            <option data-en="Other">Otra</option>
+          </select>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px">
+            <select required name="nivel" aria-label="Nivel del puesto" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#46506a">
+              <option value="" disabled selected data-en="Level">Nivel</option>
+              <option data-en="Specialist / Engineer">Especialista / Ingeniero</option>
+              <option data-en="Lead / Middle management">Jefatura / Mando medio</option>
+              <option data-en="Manager">Gerencial</option>
+              <option data-en="Director">Dirección</option>
+            </select>
+            <select required name="presupuesto" aria-label="Presupuesto" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#46506a">
+              <option value="" disabled selected data-en="Budget">Presupuesto</option>
+              <option data-en="~1 month salary">~1 mes de sueldo</option>
+              <option data-en="~Half month salary">~Medio mes de sueldo</option>
+              <option data-en="Other">Otro</option>
+            </select>
+          </div>
+          <input name="posicion" placeholder="¿Qué posición necesitas? (opcional)" data-en-ph="Which position do you need? (optional)" aria-label="Posición" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#141a2e">
+          <label style="display:flex;align-items:flex-start;gap:9px;font-size:12px;color:#69728a;cursor:pointer;margin-top:2px">
+            <input required type="checkbox" style="margin-top:2px;accent-color:#3d7dff">
+            <span data-en="I accept the privacy notice and authorize contact about my request.">Acepto el aviso de privacidad y autorizo el contacto sobre mi solicitud.</span>
+          </label>
+          <button type="submit" class="cursor-target" style="margin-top:4px;background:#3d7dff;color:#fff;font-family:inherit;font-weight:600;font-size:15.5px;padding:15px;border:none;border-radius:12px;cursor:pointer;box-shadow:0 12px 30px rgba(61,125,255,.35);transition:transform .3s,box-shadow .3s" data-en="Request candidates →">Solicitar candidatos →</button>
+          <p style="font-size:11.5px;color:#9aa2b6;text-align:center;margin-top:2px" data-en="Confidential information · No commitment">Respuesta en menos de 24 horas.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div style="position:relative;text-align:center;padding-bottom:26px">
+    <div style="display:inline-flex;flex-direction:column;align-items:center;gap:7px;color:#9aa2b6;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase">
+      <span data-en="Scroll">Desliza</span>
+      <span style="width:22px;height:34px;border:1.5px solid #c4cbdb;border-radius:12px;display:flex;justify-content:center;padding-top:6px"><span style="width:3px;height:7px;border-radius:2px;background:#3d7dff;animation:sdown 1.6s infinite"></span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAR ============ -->
+<section style="background:#f5f7fb;border-top:1px solid #e7eaf3;border-bottom:1px solid #e7eaf3">
+  <div class="stat-strip" style="max-width:1180px;margin:0 auto;padding:clamp(34px,4vw,52px) clamp(20px,5vw,40px);display:grid;grid-template-columns:repeat(4,1fr);gap:30px">
+    <div class="fade-up" style="opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .7s cubic-bezier(.16,1,.3,1)">
+      <div style="font-family:'Schibsted Grotesk';font-size:clamp(38px,4.4vw,52px);font-weight:800;color:#16234d;line-height:1"><span class="counter" data-count="19" data-prefix="+">+0</span></div>
+      <div style="font-size:13.5px;color:#69728a;margin-top:8px;max-width:200px" data-en="years specialized in automotive manufacturing">años especializados en manufactura automotriz</div>
+    </div>
+    <div class="fade-up" style="opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .7s cubic-bezier(.16,1,.3,1) .08s">
+      <div style="font-family:'Schibsted Grotesk';font-size:clamp(38px,4.4vw,52px);font-weight:800;color:#16234d;line-height:1">≤24<span style="font-size:.5em;color:#3d7dff"> hrs</span></div>
+      <div style="font-size:13.5px;color:#69728a;margin-top:8px;max-width:200px" data-en="response time to your vacancy">tiempo de respuesta a tu vacante</div>
+    </div>
+    <div class="fade-up" style="opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .7s cubic-bezier(.16,1,.3,1) .16s">
+      <div style="font-family:'Schibsted Grotesk';font-size:clamp(26px,3vw,34px);font-weight:700;color:#16234d;line-height:1.05;padding-top:10px" data-en="Networking">Networking</div>
+      <div style="font-size:13.5px;color:#69728a;margin-top:8px;max-width:200px" data-en="not found in job boards">que no está en bolsas de trabajo</div>
+    </div>
+    <div class="fade-up" style="opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .7s cubic-bezier(.16,1,.3,1) .24s">
+      <div style="font-family:'Schibsted Grotesk';font-size:clamp(26px,3vw,34px);font-weight:700;color:#16234d;line-height:1.05;padding-top:10px" data-en="Guarantee">Garantía</div>
+      <div style="font-size:13.5px;color:#69728a;margin-top:8px;max-width:200px" data-en="with a defined period per role">con período definido por puesto</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL PROOF (LOGOS) ============ -->
+<section class="client-logo-carousel" aria-label="Logos de clientes" style="padding:clamp(52px,6vw,84px) 0;background:#f5f7fb;border-bottom:1px solid #e7eaf3;overflow:hidden">
+  <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,40px);text-align:center">
+    <h2 class="split-title" style="font-size:clamp(22px,2.9vw,34px);color:#0e1730">
+      <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease,opacity .9s ease">Operamos calidad dentro de plantas que no toleran fallas</span></span>
+    </h2>
+  </div>
+  <div class="logo-mask" style="margin-top:42px;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)">
+    <div class="logo-track single-logo-track" style="display:flex;width:max-content;align-items:center;gap:64px;padding-left:64px">
+      <img src="assets/clients/gm.png" alt="GM" style="height:46px;width:auto">
+      <img src="assets/clients/aptiv.webp" alt="Aptiv" style="height:24px;width:auto">
+      <img src="assets/clients/lear.webp" alt="Lear" style="height:34px;width:auto">
+      <img src="assets/clients/magna.webp" alt="Magna" style="height:30px;width:auto">
+      <img src="assets/clients/adient.webp" alt="Adient" style="height:34px;width:auto">
+      <img src="assets/clients/martinrea.png" alt="Martinrea" style="height:48px;width:auto">
+      <img src="assets/clients/john-deere.webp" alt="John Deere" style="height:42px;width:auto">
+      <img src="assets/clients/forvia.webp" alt="Forvia" style="height:22px;width:auto">
+      <img src="assets/clients/mabe.webp" alt="Mabe" style="height:26px;width:auto">
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<section style="background:#0c1430;overflow:hidden;padding:18px 0">
+  <div style="display:flex;width:max-content;white-space:nowrap" class="marquee-track">
+    <div style="display:flex;align-items:center;gap:34px;padding-right:34px;font-family:'Schibsted Grotesk';font-size:17px;font-weight:600;color:#3a4a78;letter-spacing:.02em">
+      <span>CALIDAD</span><span style="color:#3d7dff">◆</span><span>INGENIERÍA DE PROCESO</span><span style="color:#3d7dff">◆</span><span>SQA / SQE</span><span style="color:#3d7dff">◆</span><span>RED X · 8D · 6σ</span><span style="color:#3d7dff">◆</span><span>APQP / PPAP</span><span style="color:#3d7dff">◆</span><span>GD&amp;T</span><span style="color:#3d7dff">◆</span><span>LEAN · SIX SIGMA</span><span style="color:#3d7dff">◆</span><span>SQE BILINGÜE</span><span style="color:#3d7dff">◆</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:34px;padding-right:34px;font-family:'Schibsted Grotesk';font-size:17px;font-weight:600;color:#3a4a78;letter-spacing:.02em">
+      <span>CALIDAD</span><span style="color:#3d7dff">◆</span><span>INGENIERÍA DE PROCESO</span><span style="color:#3d7dff">◆</span><span>SQA / SQE</span><span style="color:#3d7dff">◆</span><span>RED X · 8D · 6σ</span><span style="color:#3d7dff">◆</span><span>APQP / PPAP</span><span style="color:#3d7dff">◆</span><span>GD&amp;T</span><span style="color:#3d7dff">◆</span><span>LEAN · SIX SIGMA</span><span style="color:#3d7dff">◆</span><span>SQE BILINGÜE</span><span style="color:#3d7dff">◆</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERFILES QUE CUBRIMOS ============ -->
+<section id="perfiles" style="padding:clamp(64px,8vw,120px) clamp(20px,5vw,40px);background:#fff">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="max-width:680px">
+      <div class="fade-up" style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#3d7dff;opacity:0;transform:translateY(20px);transition:all .7s cubic-bezier(.16,1,.3,1)" data-en="Profiles we cover">Perfiles que cubrimos</div>
+      <h2 class="split-title" style="font-size:clamp(26px,3.5vw,42px);color:#0e1730;margin-top:14px">
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="We recruit the profiles HR can&apos;t find" style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease,opacity .9s ease">Reclutamos los perfiles que RH no encuentra</span></span>
+      </h2>
+      <p class="fade-up" style="margin-top:16px;font-size:16px;color:#5e6a82;opacity:0;transform:translateY(28px);filter:blur(8px);transition:all .8s cubic-bezier(.16,1,.3,1) .12s" data-en="From our daily operation, we know and manage these areas. We don&apos;t search portals — we contact professionals we&apos;ve seen work on the floor directly.">Por nuestra operación diaria conocemos y administramos estas áreas. No buscamos en portales — contactamos directamente a profesionales que hemos visto trabajar en piso.</p>
+    </div>
+    <div class="grid-4" style="margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+      <div class="reveal cursor-target" style="position:relative;background:#fff;border:1px solid #e7eaf3;border-radius:18px;padding:26px 22px;overflow:hidden;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1);box-shadow:0 1px 2px rgba(16,24,60,.04)" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 24px 48px rgba(16,24,60,.13)';this.querySelector('.acc').style.transform='scaleX(1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(16,24,60,.04)';this.querySelector('.acc').style.transform='scaleX(0)'">
+        <span class="acc" style="position:absolute;top:0;left:0;right:0;height:3px;background:#3d7dff;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)"></span>
+        <div style="width:46px;height:46px;border-radius:12px;background:rgba(61,125,255,.1);display:flex;align-items:center;justify-content:center;color:#3d7dff">
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <h3 style="font-size:17px;color:#16234d;margin-top:16px" data-en="Quality">Calidad</h3>
+        <p style="font-size:13px;color:#69728a;margin-top:9px;line-height:1.5" data-en="Quality Managers · Quality Engineers · Supplier Quality (SQA/SQE) · Problem-solving experts (Red X, 8D, 6σ)">Gerentes de Calidad · Ingenieros de Calidad · Calidad Proveedores (SQA/SQE) · Expertos en solución de problemas (Red X, 8D, 6σ)</p>
+      </div>
+      <div class="reveal cursor-target" style="position:relative;background:#fff;border:1px solid #e7eaf3;border-radius:18px;padding:26px 22px;overflow:hidden;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .08s;box-shadow:0 1px 2px rgba(16,24,60,.04)" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 24px 48px rgba(16,24,60,.13)';this.querySelector('.acc').style.transform='scaleX(1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(16,24,60,.04)';this.querySelector('.acc').style.transform='scaleX(0)'">
+        <span class="acc" style="position:absolute;top:0;left:0;right:0;height:3px;background:#3d7dff;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)"></span>
+        <div style="width:46px;height:46px;border-radius:12px;background:rgba(61,125,255,.1);display:flex;align-items:center;justify-content:center;color:#3d7dff">
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 8 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H2a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 3.6 8a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H8a1.65 1.65 0 0 0 1-1.51V2a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V8a1.65 1.65 0 0 0 1.51 1H22a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3 style="font-size:17px;color:#16234d;margin-top:16px" data-en="Engineering / Manufacturing">Ingeniería / Manufactura</h3>
+        <p style="font-size:13px;color:#69728a;margin-top:9px;line-height:1.5" data-en="Process Engineers · Manufacturing Engineers · Launch specialists (APQP, PPAP) · GD&amp;T · Lean / Six Sigma">Ingenieros de Proceso · Ingenieros de Manufactura · Especialistas en lanzamiento (APQP, PPAP) · GD&amp;T · Lean / Six Sigma</p>
+      </div>
+      <div class="reveal cursor-target" style="position:relative;background:#fff;border:1px solid #e7eaf3;border-radius:18px;padding:26px 22px;overflow:hidden;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .16s;box-shadow:0 1px 2px rgba(16,24,60,.04)" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 24px 48px rgba(16,24,60,.13)';this.querySelector('.acc').style.transform='scaleX(1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(16,24,60,.04)';this.querySelector('.acc').style.transform='scaleX(0)'">
+        <span class="acc" style="position:absolute;top:0;left:0;right:0;height:3px;background:#3d7dff;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)"></span>
+        <div style="width:46px;height:46px;border-radius:12px;background:rgba(61,125,255,.1);display:flex;align-items:center;justify-content:center;color:#3d7dff">
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 20h20M4 20V9l5 3V9l5 3V6l5 3v11"/></svg>
+        </div>
+        <h3 style="font-size:17px;color:#16234d;margin-top:16px" data-en="Operations / Plant">Operaciones / Planta</h3>
+        <p style="font-size:13px;color:#69728a;margin-top:9px;line-height:1.5" data-en="Operations Managers · Plant Managers · Area leads · Operations Directors">Gerentes de Operaciones · Gerentes de Planta · Jefaturas de área · Directores de Operaciones</p>
+      </div>
+      <div class="reveal cursor-target" style="position:relative;background:#fff;border:1px solid #e7eaf3;border-radius:18px;padding:26px 22px;overflow:hidden;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .24s;box-shadow:0 1px 2px rgba(16,24,60,.04)" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 24px 48px rgba(16,24,60,.13)';this.querySelector('.acc').style.transform='scaleX(1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(16,24,60,.04)';this.querySelector('.acc').style.transform='scaleX(0)'">
+        <span class="acc" style="position:absolute;top:0;left:0;right:0;height:3px;background:#3d7dff;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)"></span>
+        <div style="width:46px;height:46px;border-radius:12px;background:rgba(61,125,255,.1);display:flex;align-items:center;justify-content:center;color:#3d7dff">
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 style="font-size:17px;color:#16234d;margin-top:16px" data-en="Human Resources">Recursos Humanos</h3>
+        <p style="font-size:13px;color:#69728a;margin-top:9px;line-height:1.5" data-en="HR Managers · Recruitment Managers · Talent Directors · Bilingual profiles for MX + US operations">Gerentes de RH · Gerentes de Reclutamiento · Directores de Talento · Perfiles bilingües para operación MX + EUA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POR QUÉ LABOR MEXICANA ============ -->
+<section id="porque" style="position:relative;background:#0c1430;color:#fff;overflow:hidden;padding:clamp(64px,8vw,120px) clamp(20px,5vw,40px)">
+  <canvas data-particles data-color="61,125,255" style="position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none"></canvas>
+  <div style="position:absolute;top:10%;right:-140px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(61,125,255,.18),transparent 65%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1180px;margin:0 auto">
+    <div style="max-width:760px">
+      <div class="fade-up" style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#7fa8ff;opacity:0;transform:translateY(20px);transition:all .7s cubic-bezier(.16,1,.3,1)" data-en="Why Labor Mexicana">¿Por qué Labor Mexicana?</div>
+      <h2 class="split-title" style="font-size:clamp(27px,3.7vw,46px);margin-top:14px;color:#fff">
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="We&apos;re not headhunters. We&apos;re the industry" style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease,opacity .9s ease">No somos headhunters. Somos la industria</span></span>
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="recruiting for the industry." style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1) .1s,filter .9s ease .1s,opacity .9s ease .1s;color:#7fa8ff">reclutando para la industria.</span></span>
+      </h2>
+    </div>
+    <div class="grid-3" style="margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div class="reveal" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:30px 26px;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1)">
+        <div style="font-family:'Schibsted Grotesk';font-size:40px;font-weight:800;color:#3d7dff;line-height:1">01</div>
+        <h3 style="font-size:18.5px;color:#fff;margin-top:16px" data-en="19 years inside plants, not in job boards">19 años dentro de plantas, no en bolsas de trabajo</h3>
+        <p style="font-size:14px;color:#aab4cc;margin-top:11px;line-height:1.6" data-en="We don&apos;t search LinkedIn like a headhunter. We know these professionals personally because we supervise, train and operate with them in automotive plants across Mexico. That network isn&apos;t bought in a portal — it&apos;s built on the floor, shift after shift, over 19 years.">No buscamos en LinkedIn como un headhunter. Conocemos a estos profesionales personalmente porque los supervisamos, capacitamos y operamos con ellos en plantas automotrices de todo México. Ese networking no se compra en un portal — se construye en piso, turno tras turno, durante 19 años.</p>
+      </div>
+      <div class="reveal" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:30px 26px;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .1s">
+        <div style="font-family:'Schibsted Grotesk';font-size:40px;font-weight:800;color:#3d7dff;line-height:1">02</div>
+        <h3 style="font-size:18.5px;color:#fff;margin-top:16px" data-en="Same profile, lower cost">Mismo perfil, menor costo</h3>
+        <p style="font-size:14px;color:#aab4cc;margin-top:11px;line-height:1.6" data-en="Because these profiles are our daily operation, we deliver them without a premium headhunter&apos;s inflated structure. No 3 months, no 3-salary fee. The result: a candidate who truly knows the job, at a market-aligned cost.">Porque estos perfiles son nuestra operación diaria, te los entregamos sin la estructura inflada de un headhunter premium. No necesitamos 3 meses ni un fee de 3 sueldos. El resultado: un candidato que realmente sabe lo que hace, a un costo acorde al mercado.</p>
+      </div>
+      <div class="reveal" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:30px 26px;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .2s">
+        <div style="font-family:'Schibsted Grotesk';font-size:40px;font-weight:800;color:#3d7dff;line-height:1">03</div>
+        <h3 style="font-size:18.5px;color:#fff;margin-top:16px" data-en="Real guarantee: if it doesn&apos;t work, we search again">Garantía real: si no funciona, buscamos de nuevo</h3>
+        <p style="font-size:14px;color:#aab4cc;margin-top:11px;line-height:1.6" data-en="Guarantee with a period defined by role level. If the candidate doesn&apos;t stay or fit, we restart the search at no extra cost. Validation isn&apos;t just a CV: deep socioeconomic studies, work and neighborhood references, INFONAVIT and labor-dispute history.">Garantía con período definido por nivel de puesto. Si el candidato no se queda o no cumple el perfil, reactivamos la búsqueda sin costo adicional. Y la validación no es solo un CV: estudios socioeconómicos profundos, referencias laborales y vecinales, historial INFONAVIT y de demandas laborales.</p>
+      </div>
+    </div>
+    <div class="fade-up" style="margin-top:26px;display:flex;align-items:flex-start;gap:14px;background:rgba(61,125,255,.1);border:1px solid rgba(61,125,255,.25);border-radius:16px;padding:20px 24px;opacity:0;transform:translateY(28px);transition:all .8s cubic-bezier(.16,1,.3,1)">
+      <span style="font-size:20px;flex-shrink:0">↻</span>
+      <p style="font-size:14.5px;color:#cdd6ec;line-height:1.6" data-en="The virtuous circle: every quality professional we place in your plant knows our BPO service. Today we recruit your quality engineer — tomorrow he has a CS2 and calls us for containment."><strong style="color:#fff">El círculo virtuoso:</strong> cada profesional de calidad que colocamos en tu planta conoce nuestro servicio de BPO. Hoy te reclutamos a tu ingeniero de calidad — mañana él tiene un CS2 y nos llama para la contención.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section id="proceso" style="padding:clamp(64px,8vw,120px) clamp(20px,5vw,40px);background:#f5f7fb">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="max-width:680px">
+      <div class="fade-up" style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#3d7dff;opacity:0;transform:translateY(20px);transition:all .7s cubic-bezier(.16,1,.3,1)" data-en="How it works">Cómo funciona</div>
+      <h2 class="split-title" style="font-size:clamp(26px,3.5vw,42px);color:#0e1730;margin-top:14px">
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="From your vacancy to the right candidate in 4 steps" style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease,opacity .9s ease">De tu vacante al candidato correcto en 4 pasos</span></span>
+      </h2>
+    </div>
+    <div class="grid-4" style="margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+      <div class="reveal cursor-target" style="background:#fff;border:1px solid #e7eaf3;border-radius:18px;padding:26px 22px;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1)" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 22px 44px rgba(16,24,60,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-family:'Schibsted Grotesk';font-size:34px;font-weight:800;color:#dfe5f1">01</span></div>
+        <h3 style="font-size:17px;color:#16234d;margin-top:8px" data-en="Tell us the vacancy">Cuéntanos la vacante</h3>
+        <p style="font-size:13.5px;color:#69728a;margin-top:9px;line-height:1.55" data-en="Fill the form with the profile, level and budget. Takes 3 minutes.">Llena el formulario con el perfil, nivel y presupuesto. Toma 3 minutos.</p>
+      </div>
+      <div class="reveal cursor-target" style="background:#fff;border:1px solid #e7eaf3;border-radius:18px;padding:26px 22px;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .08s" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 22px 44px rgba(16,24,60,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-family:'Schibsted Grotesk';font-size:34px;font-weight:800;color:#dfe5f1">02</span><span style="font-size:11px;font-weight:700;color:#3d7dff;background:rgba(61,125,255,.1);padding:5px 10px;border-radius:999px">≤ 24 h</span></div>
+        <h3 style="font-size:17px;color:#16234d;margin-top:8px" data-en="Call with a specialist">Llamada con especialista</h3>
+        <p style="font-size:13.5px;color:#69728a;margin-top:9px;line-height:1.55" data-en="An advisor who knows your industry contacts you to fully understand the position and your plant context.">Un asesor que conoce tu industria te contacta para entender a fondo la posición y el contexto de tu planta.</p>
+      </div>
+      <div class="reveal cursor-target" style="background:#fff;border:1px solid #e7eaf3;border-radius:18px;padding:26px 22px;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .16s" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 22px 44px rgba(16,24,60,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-family:'Schibsted Grotesk';font-size:34px;font-weight:800;color:#dfe5f1">03</span><span style="font-size:11px;font-weight:700;color:#3d7dff;background:rgba(61,125,255,.1);padding:5px 10px;border-radius:999px">≤ 5 días</span></div>
+        <h3 style="font-size:17px;color:#16234d;margin-top:8px" data-en="We present the shortlist">Te presentamos la terna</h3>
+        <p style="font-size:13.5px;color:#69728a;margin-top:9px;line-height:1.55" data-en="Pre-filtered, validated candidates aligned to the profile. No filler with people who don&apos;t qualify.">Candidatos pre-filtrados y validados, alineados al perfil. Sin rellenar con quien no cumple.</p>
+      </div>
+      <div class="reveal cursor-target" style="background:#16234d;border:1px solid #16234d;border-radius:18px;padding:26px 22px;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .24s" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 22px 44px rgba(16,24,60,.22)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-family:'Schibsted Grotesk';font-size:34px;font-weight:800;color:rgba(255,255,255,.22)">04</span></div>
+        <h3 style="font-size:17px;color:#fff;margin-top:8px" data-en="Selection and guarantee">Selección y garantía</h3>
+        <p style="font-size:13.5px;color:#b9c2da;margin-top:9px;line-height:1.55" data-en="You validate the final candidate. We close with a defined-period guarantee. If it doesn&apos;t work, we search again.">Tú validas al candidato final. Cerramos con garantía por período definido. Si no funciona, buscamos de nuevo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTADOS ============ -->
+<section id="resultados" style="padding:clamp(64px,8vw,120px) clamp(20px,5vw,40px);background:#fff">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="max-width:700px">
+      <div class="fade-up" style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#3d7dff;opacity:0;transform:translateY(20px);transition:all .7s cubic-bezier(.16,1,.3,1)" data-en="Results">Resultados</div>
+      <h2 class="split-title" style="font-size:clamp(26px,3.5vw,42px);color:#0e1730;margin-top:14px">
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="What happens when the industry recruits for the industry" style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease,opacity .9s ease">Lo que pasa cuando la industria recluta para la industria</span></span>
+      </h2>
+    </div>
+    <div class="grid-2" style="margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div class="reveal cursor-target" style="position:relative;border:1px solid #e7eaf3;border-radius:18px;padding:28px;overflow:hidden;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1)" onmouseover="this.querySelector('.acc').style.transform='scaleX(1)'" onmouseout="this.querySelector('.acc').style.transform='scaleX(0)'">
+        <span class="acc" style="position:absolute;top:0;left:0;right:0;height:3px;background:#3d7dff;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)"></span>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#3d7dff">Tier 1 · Bajío</div>
+        <p style="font-size:16px;color:#2b3450;margin-top:12px;line-height:1.55" data-en="Supplier Quality Engineer position filled in 5 business days. Candidate still active after 12 months.">Posición de Ingeniero de Calidad Proveedores cubierta en 5 días hábiles. Candidato sigue activo después de 12 meses.</p>
+      </div>
+      <div class="reveal cursor-target" style="position:relative;border:1px solid #e7eaf3;border-radius:18px;padding:28px;overflow:hidden;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .08s" onmouseover="this.querySelector('.acc').style.transform='scaleX(1)'" onmouseout="this.querySelector('.acc').style.transform='scaleX(0)'">
+        <span class="acc" style="position:absolute;top:0;left:0;right:0;height:3px;background:#3d7dff;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)"></span>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#3d7dff" data-en="OEM · Northern Mexico">OEM · Norte de México</div>
+        <p style="font-size:16px;color:#2b3450;margin-top:12px;line-height:1.55" data-en="Quality Manager with Red X experience identified and presented in under 48 hours. Hired from the first shortlist.">Gerente de Calidad con experiencia en Red X identificado y presentado en menos de 48 horas. Contratado en la primera terna.</p>
+      </div>
+      <div class="reveal cursor-target" style="position:relative;border:1px solid #e7eaf3;border-radius:18px;padding:28px;overflow:hidden;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .16s" onmouseover="this.querySelector('.acc').style.transform='scaleX(1)'" onmouseout="this.querySelector('.acc').style.transform='scaleX(0)'">
+        <span class="acc" style="position:absolute;top:0;left:0;right:0;height:3px;background:#3d7dff;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)"></span>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#3d7dff" data-en="Plant start-up · SLP">Arranque de planta · SLP</div>
+        <p style="font-size:16px;color:#2b3450;margin-top:12px;line-height:1.55" data-en="Key quality and engineering positions filled before SOP. Full team for launch with no delays.">Posiciones clave de calidad e ingeniería cubiertas antes del SOP. Equipo completo para lanzamiento sin retrasos.</p>
+      </div>
+      <div class="reveal cursor-target" style="position:relative;border:1px solid #e7eaf3;border-radius:18px;padding:28px;overflow:hidden;opacity:0;transform:translateY(34px);transition:all .7s cubic-bezier(.16,1,.3,1) .24s" onmouseover="this.querySelector('.acc').style.transform='scaleX(1)'" onmouseout="this.querySelector('.acc').style.transform='scaleX(0)'">
+        <span class="acc" style="position:absolute;top:0;left:0;right:0;height:3px;background:#3d7dff;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)"></span>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#3d7dff">Tier 1 · EUA (Michigan)</div>
+        <p style="font-size:16px;color:#2b3450;margin-top:12px;line-height:1.55" data-en="Bilingual SQE placed for a binational operation. Profile validated with cross-referenced MX + US checks.">SQE bilingüe colocado para operación binacional. Perfil validado con referencias cruzadas MX + EUA.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FULL-WIDTH BREAK ============ -->
+<section style="position:relative;background:#16234d;color:#fff;overflow:hidden;padding:clamp(64px,9vw,128px) clamp(20px,5vw,40px)">
+  <canvas data-particles data-color="127,168,255" style="position:absolute;inset:0;width:100%;height:100%;opacity:.45;pointer-events:none"></canvas>
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(61,125,255,.25),transparent 55%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1000px;margin:0 auto;text-align:center">
+    <div class="break-stat fade-up" style="font-family:'Schibsted Grotesk';font-weight:800;font-size:clamp(96px,15vw,180px);line-height:.9;color:#fff;letter-spacing:-0.04em;opacity:0;transform:translateY(28px);transition:all .9s cubic-bezier(.16,1,.3,1)"><span class="counter" data-count="19">0</span><span style="color:#3d7dff">+</span></div>
+    <p class="fade-up" style="font-family:'Schibsted Grotesk';font-size:clamp(20px,2.6vw,30px);font-weight:600;margin-top:8px;opacity:0;transform:translateY(28px);transition:all .9s cubic-bezier(.16,1,.3,1) .1s" data-en="years operating quality inside the most demanding plants on the continent.">años operando calidad dentro de las plantas más exigentes del continente.</p>
+    <p class="fade-up" style="font-size:16px;color:#aab4cc;margin-top:18px;max-width:560px;margin-left:auto;margin-right:auto;opacity:0;transform:translateY(28px);transition:all .9s cubic-bezier(.16,1,.3,1) .18s" data-en="That floor knowledge is exactly why we find technical talent before a generalist recruiter even knows where to look.">Ese conocimiento de piso es justo por lo que encontramos talento técnico antes de que un reclutador generalista sepa dónde buscar.</p>
+    <a href="#prefiltro" class="cursor-target" style="display:inline-flex;align-items:center;gap:10px;margin-top:30px;background:#3d7dff;color:#fff;font-weight:600;font-size:16px;padding:16px 30px;border-radius:999px;text-decoration:none;box-shadow:0 14px 38px rgba(61,125,255,.4)" data-en="Request candidates →">Solicitar candidatos →</a>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section style="padding:clamp(64px,8vw,120px) clamp(20px,5vw,40px);background:#f5f7fb">
+  <div style="max-width:880px;margin:0 auto">
+    <div style="text-align:center;max-width:640px;margin:0 auto">
+      <div class="fade-up" style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#3d7dff;opacity:0;transform:translateY(20px);transition:all .7s cubic-bezier(.16,1,.3,1)" data-en="FAQ">Preguntas frecuentes</div>
+      <h2 class="split-title" style="font-size:clamp(26px,3.5vw,40px);color:#0e1730;margin-top:14px">
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="What HR usually asks us" style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease,opacity .9s ease">Lo que RH suele preguntarnos</span></span>
+      </h2>
+    </div>
+    <div class="fade-up" style="margin-top:38px;display:flex;flex-direction:column;gap:12px;opacity:0;transform:translateY(28px);transition:all .8s cubic-bezier(.16,1,.3,1)">
+      <div style="background:#fff;border:1px solid #e7eaf3;border-radius:14px;overflow:hidden">
+        <button data-faq data-open="1" aria-expanded="true" class="cursor-target" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Schibsted Grotesk';font-size:16.5px;font-weight:600;color:#16234d">
+          <span data-en="How is your fee different from a traditional headhunter?">¿En qué se diferencia su fee del de un headhunter tradicional?</span>
+          <span class="faq-ic" style="flex-shrink:0;font-size:22px;color:#3d7dff;font-weight:300">+</span>
+        </button>
+        <div class="faq-panel"><p style="padding:0 24px 22px;font-size:14.5px;color:#5e6a82;line-height:1.6" data-en="We don&apos;t carry the inflated structure of a premium headhunter. Since these profiles are our daily operation, we don&apos;t need 3 months or a 3-salary fee — our fee is competitive against market for the same caliber of candidate.">No cargamos la estructura inflada de un headhunter premium. Como estos perfiles son nuestra operación diaria, no necesitamos 3 meses ni un fee de 3 sueldos — nuestro fee es competitivo frente al mercado para el mismo nivel de candidato.</p></div>
+      </div>
+      <div style="background:#fff;border:1px solid #e7eaf3;border-radius:14px;overflow:hidden">
+        <button data-faq aria-expanded="false" class="cursor-target" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Schibsted Grotesk';font-size:16.5px;font-weight:600;color:#16234d">
+          <span data-en="How long does it take to present candidates?">¿En cuánto tiempo presentan candidatos?</span>
+          <span class="faq-ic" style="flex-shrink:0;font-size:22px;color:#3d7dff;font-weight:300">+</span>
+        </button>
+        <div class="faq-panel"><p style="padding:0 24px 22px;font-size:14.5px;color:#5e6a82;line-height:1.6" data-en="A specialist contacts you in under 24 hours, and we typically present a pre-filtered, validated shortlist within 5 business days.">Un especialista te contacta en menos de 24 horas, y normalmente presentamos una terna pre-filtrada y validada en un máximo de 5 días hábiles.</p></div>
+      </div>
+      <div style="background:#fff;border:1px solid #e7eaf3;border-radius:14px;overflow:hidden">
+        <button data-faq aria-expanded="false" class="cursor-target" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Schibsted Grotesk';font-size:16.5px;font-weight:600;color:#16234d">
+          <span data-en="What does the guarantee cover?">¿Qué cubre la garantía?</span>
+          <span class="faq-ic" style="flex-shrink:0;font-size:22px;color:#3d7dff;font-weight:300">+</span>
+        </button>
+        <div class="faq-panel"><p style="padding:0 24px 22px;font-size:14.5px;color:#5e6a82;line-height:1.6" data-en="A guarantee period defined by role level. If the candidate doesn&apos;t stay or doesn&apos;t meet the profile, we reactivate the search at no additional cost.">Un período de garantía definido por nivel de puesto. Si el candidato no se queda o no cumple el perfil, reactivamos la búsqueda sin costo adicional.</p></div>
+      </div>
+      <div style="background:#fff;border:1px solid #e7eaf3;border-radius:14px;overflow:hidden">
+        <button data-faq aria-expanded="false" class="cursor-target" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Schibsted Grotesk';font-size:16.5px;font-weight:600;color:#16234d">
+          <span data-en="How do you validate a candidate beyond the CV?">¿Cómo validan a un candidato más allá del CV?</span>
+          <span class="faq-ic" style="flex-shrink:0;font-size:22px;color:#3d7dff;font-weight:300">+</span>
+        </button>
+        <div class="faq-panel"><p style="padding:0 24px 22px;font-size:14.5px;color:#5e6a82;line-height:1.6" data-en="Deep socioeconomic studies, work and neighborhood references, INFONAVIT history and labor-dispute records — plus our direct knowledge of how they actually perform on the floor.">Estudios socioeconómicos profundos, referencias laborales y vecinales, historial INFONAVIT e historial de demandas laborales — además de nuestro conocimiento directo de cómo se desempeñan en piso.</p></div>
+      </div>
+      <div style="background:#fff;border:1px solid #e7eaf3;border-radius:14px;overflow:hidden">
+        <button data-faq aria-expanded="false" class="cursor-target" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Schibsted Grotesk';font-size:16.5px;font-weight:600;color:#16234d">
+          <span data-en="Do you cover bilingual profiles for the US?">¿Cubren perfiles bilingües para EUA?</span>
+          <span class="faq-ic" style="flex-shrink:0;font-size:22px;color:#3d7dff;font-weight:300">+</span>
+        </button>
+        <div class="faq-panel"><p style="padding:0 24px 22px;font-size:14.5px;color:#5e6a82;line-height:1.6" data-en="Yes. We operate in Mexico with presence in the US (Texas, Michigan, California) for bilingual profiles serving binational MX + US operations.">Sí. Operamos en México con presencia en EUA (Texas, Michigan, California) para perfiles bilingües que atienden operaciones binacionales MX + EUA.</p></div>
+      </div>
+      <div style="background:#fff;border:1px solid #e7eaf3;border-radius:14px;overflow:hidden">
+        <button data-faq aria-expanded="false" class="cursor-target" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Schibsted Grotesk';font-size:16.5px;font-weight:600;color:#16234d">
+          <span data-en="I need operational, high-volume staff. Can you help?">Necesito personal operativo de volumen, ¿pueden?</span>
+          <span class="faq-ic" style="flex-shrink:0;font-size:22px;color:#3d7dff;font-weight:300">+</span>
+        </button>
+        <div class="faq-panel"><p style="padding:0 24px 22px;font-size:14.5px;color:#5e6a82;line-height:1.6" data-en="This page is only for specialized profiles. Operational volume due to turnover is handled with our RPO / BPO model — we&apos;ll point you to the right page.">Esta página es solo para perfiles especializados. El volumen operativo por rotación se atiende con nuestro modelo RPO / BPO — te dirigimos a la página correcta.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials-section" id="testimonios">
+  <div class="testimonials-head">
+    <div class="testimonials-kicker">Resultados</div>
+    <h2>Lo que pasa cuando la industria recluta para la industria</h2>
+  </div>
+  <div class="testimonial-rows" aria-label="Carrusel doble con resultados, compromisos y estrellas">
+    <div class="testimonial-row"><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Tier 1 · Bajío</h3><p>Posición de Ingeniero de Calidad Proveedores cubierta en 5 días hábiles. Candidato sigue activo después de 12 meses.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092335878-8bd2ea911d95?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>OEM · Norte de México</h3><p>Gerente de Calidad con experiencia en Red X identificado y presentado en menos de 48 horas. Contratado en la primera terna.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Arranque de planta · SLP</h3><p>Posiciones clave de calidad e ingeniería cubiertas antes del SOP. Equipo completo para lanzamiento sin retrasos.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Tier 1 · EUA (Michigan)</h3><p>SQE bilingüe colocado para operación binacional. Perfil validado con referencias cruzadas MX + US.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Tier 1 · Bajío</h3><p>Posición de Ingeniero de Calidad Proveedores cubierta en 5 días hábiles. Candidato sigue activo después de 12 meses.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>OEM · Norte de México</h3><p>Gerente de Calidad con experiencia en Red X identificado y presentado en menos de 48 horas. Contratado en la primera terna.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Arranque de planta · SLP</h3><p>Posiciones clave de calidad e ingeniería cubiertas antes del SOP. Equipo completo para lanzamiento sin retrasos.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092335878-8bd2ea911d95?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Tier 1 · EUA (Michigan)</h3><p>SQE bilingüe colocado para operación binacional. Perfil validado con referencias cruzadas MX + US.</p></div></article></div>
+    <div class="testimonial-row row-reverse"><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Tier 1 · EUA (Michigan)</h3><p>SQE bilingüe colocado para operación binacional. Perfil validado con referencias cruzadas MX + US.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Arranque de planta · SLP</h3><p>Posiciones clave de calidad e ingeniería cubiertas antes del SOP. Equipo completo para lanzamiento sin retrasos.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>OEM · Norte de México</h3><p>Gerente de Calidad con experiencia en Red X identificado y presentado en menos de 48 horas. Contratado en la primera terna.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Tier 1 · Bajío</h3><p>Posición de Ingeniero de Calidad Proveedores cubierta en 5 días hábiles. Candidato sigue activo después de 12 meses.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Tier 1 · EUA (Michigan)</h3><p>SQE bilingüe colocado para operación binacional. Perfil validado con referencias cruzadas MX + US.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092335878-8bd2ea911d95?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Arranque de planta · SLP</h3><p>Posiciones clave de calidad e ingeniería cubiertas antes del SOP. Equipo completo para lanzamiento sin retrasos.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>OEM · Norte de México</h3><p>Gerente de Calidad con experiencia en Red X identificado y presentado en menos de 48 horas. Contratado en la primera terna.</p></div></article><article class="testimonial-card"><div class="testimonial-photo"><img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=260&q=75" alt="Ambiente industrial y corporativo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='assets/testimonial-industrial-1.svg';"></div><div><div class="testimonial-stars" aria-hidden="true">★★★★★</div><h3>Tier 1 · Bajío</h3><p>Posición de Ingeniero de Calidad Proveedores cubierta en 5 días hábiles. Candidato sigue activo después de 12 meses.</p></div></article></div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section style="padding:clamp(56px,7vw,104px) clamp(20px,5vw,40px);background:#fff">
+  <div style="max-width:1000px;margin:0 auto;background:linear-gradient(135deg,#0c1430,#1a2a5e);border-radius:28px;padding:clamp(36px,5vw,64px);position:relative;overflow:hidden">
+    <canvas data-particles data-color="127,168,255" style="position:absolute;inset:0;width:100%;height:100%;opacity:.4;pointer-events:none"></canvas>
+    <div style="position:relative;text-align:center;max-width:640px;margin:0 auto">
+      <h2 class="split-title" style="font-size:clamp(24px,3.3vw,38px);color:#fff">
+        <span class="line-wrap" style="display:block;overflow:hidden;padding-bottom:.06em"><span class="line" data-en="Has HR spent weeks chasing a technical quality profile?" style="display:block;transform:translateY(112%);filter:blur(6px);opacity:0;transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s ease,opacity .9s ease">¿Tu RH lleva semanas buscando un perfil técnico de calidad?</span></span>
+      </h2>
+      <p class="fade-up" style="margin-top:16px;font-size:16px;color:#aab4cc;opacity:0;transform:translateY(28px);transition:all .8s cubic-bezier(.16,1,.3,1) .12s" data-en="Let us show you why we find it first. Tell us the profile and in under 24 hours a specialist from our industry contacts you with a plan.">Déjanos mostrarte por qué lo encontramos primero. Cuéntanos el perfil y en menos de 24 horas un especialista de nuestra industria te contacta con un plan.</p>
+      <a href="#prefiltro" class="cursor-target" style="display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:#3d7dff;color:#fff;font-weight:600;font-size:16px;padding:16px 32px;border-radius:999px;text-decoration:none;box-shadow:0 14px 38px rgba(61,125,255,.4)" data-en="Request candidates →">Solicitar candidatos →</a>
+      <p class="fade-up" style="margin-top:14px;font-size:13px;color:#8a93a8;opacity:0;transition:all .8s ease .2s" data-en="Response in under 24 hours. No commitment.">Respuesta en menos de 24 horas. Sin compromiso.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-final-form" id="formulario-final">
+  <div class="final-form-card">
+    <div class="final-form-copy"><div class="micro">Formulario de prefiltro</div><h2>Cuéntanos qué posición necesitas</h2><p>Llena el formulario y un asesor especializado te contactará en menos de 24 horas con un plan para tu vacante.</p></div>
+    <form class="final-form" data-lead-form data-svc="reclutamiento-final">
+      <div class="two"><input required name="nombre" placeholder="Tu nombre"><input required type="email" name="correo" placeholder="tunombre@tuempresa.com"></div>
+      <div class="two"><input required name="empresa" placeholder="Nombre de tu empresa"><input required name="tel" placeholder="+52 55 0000 0000"></div>
+      <div class="two"><select required name="area"><option value="" disabled selected>Área del puesto</option><option>Calidad</option><option>Ingeniería/Manufactura</option><option>Operaciones/Planta</option><option>RH/Reclutamiento</option><option>Otra</option></select><select required name="nivel"><option value="" disabled selected>Nivel del puesto</option><option>Especialista/Ingeniero</option><option>Jefatura/Mando medio</option><option>Gerencial</option><option>Dirección</option></select></div>
+      <div class="two"><select required name="presupuesto"><option value="" disabled selected>Presupuesto por posición</option><option>~1 mes de sueldo</option><option>~Medio mes de sueldo</option><option>Otro</option></select><select required name="garantia"><option value="" disabled selected>¿Qué garantía esperas?</option><option>30 días</option><option>60 días</option><option>90 días</option><option>No estoy seguro</option></select></div>
+      <textarea name="posiciones" placeholder="p. ej. Ingeniero de Calidad Proveedores, Gerente de Planta…"></textarea>
+      <label><input required type="checkbox" style="margin-top:2px;accent-color:#3d7dff"><span>Acepto el aviso de privacidad y autorizo el contacto sobre mi solicitud.</span></label><button type="submit">Solicitar candidatos →</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="position:relative;background:#0c1430;color:#cdd6ec;overflow:hidden;padding:clamp(52px,6vw,84px) clamp(20px,5vw,40px) 36px">
+  <canvas data-particles data-color="61,125,255" style="position:absolute;inset:0;width:100%;height:100%;opacity:.3;pointer-events:none"></canvas>
+  <div style="position:relative;max-width:1180px;margin:0 auto">
+    <div class="footer-grid" style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:38px">
+      <div>
+        <img src="assets/labormx-white.png" alt="Labor Mexicana" style="height:32px;width:auto;margin-bottom:18px">
+        <p style="font-size:14px;color:#8a95b4;max-width:340px;line-height:1.6" data-en="Specialized recruitment for manufacturing. Operating in Mexico, with presence in the US (Texas, Michigan, California) for bilingual profiles.">Reclutamiento especializado para manufactura. Operación en México, con presencia en EUA (Texas, Michigan, California) para perfiles bilingües.</p>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#5d6a8c;margin-bottom:16px" data-en="Pages">Páginas</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:14px">
+          <a href="#perfiles" style="text-decoration:none;color:#aab4cc" data-en="Profiles">Perfiles</a>
+          <a href="#proceso" style="text-decoration:none;color:#aab4cc" data-en="Process">Proceso</a>
+          <a href="BPO.dc.html" style="text-decoration:none;color:#aab4cc">BPO de Calidad</a>
+          <a href="Staffing.dc.html" style="text-decoration:none;color:#aab4cc">Staffing & Nómina</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#5d6a8c;margin-bottom:16px" data-en="Contact">Contacto</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:14px">
+          <a href="mailto:contacto@labormx.com" style="text-decoration:none;color:#aab4cc">contacto@labormx.com</a>
+          <a href="https://labormx.com" style="text-decoration:none;color:#aab4cc">labormx.com</a>
+          <a href="#prefiltro" style="text-decoration:none;color:#7fa8ff;font-weight:600" data-en="Request candidates →">Solicitar candidatos →</a>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:42px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;font-size:12.5px;color:#6b7798">
+      <span>© 2026 Labor Mexicana · <a href="#" style="color:#6b7798" data-en="Privacy notice">Aviso de privacidad</a> · <a href="#" style="color:#6b7798" data-en="Terms of service">Términos de servicio</a></span>
+      <span data-en="Built by Dinametra.com">Desarrollado por <a href="http://dinametra.com/" target="_blank" rel="noopener" style="color:#9aa6c8;font-weight:600">Dinametra.com</a></span>
+    </div>
+  </div>
+</footer>
+<script type="module" src="assets/labor.js"></script>
+</body>
+</html>

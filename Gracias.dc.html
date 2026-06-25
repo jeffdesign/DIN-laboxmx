@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaborMX · Gracias</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/labor.css">
+</head>
+<body class="page-gracias thankyou-fixed">
+<div class="cursor-dot"></div>
+<div class="cursor-follower"></div>
+<div class="scroll-progress"></div>
+
+<canvas data-particles data-color="61,125,255" style="position:fixed;inset:0;width:100%;height:100%;opacity:.4;pointer-events:none;z-index:0"></canvas>
+<div style="position:fixed;top:-160px;right:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(61,125,255,.2),transparent 65%);pointer-events:none;z-index:0"></div>
+
+<!-- top bar -->
+<header style="position:relative;z-index:5;max-width:1180px;margin:0 auto;padding:24px clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between">
+  <a href="https://labormx.com" style="display:flex;align-items:center;text-decoration:none"><img src="assets/labormx-white.png" alt="Labor Mexicana" style="height:30px;width:auto"></a>
+  <a href="javascript:history.back()" class="cursor-target" style="font-size:14px;font-weight:600;color:#aab4cc;text-decoration:none;display:inline-flex;align-items:center;gap:7px">← <span data-en="Back">Volver</span></a>
+</header>
+
+<main style="position:relative;z-index:5;max-width:1100px;margin:0 auto;padding:clamp(20px,4vw,48px) clamp(20px,5vw,40px) clamp(60px,8vw,100px)">
+  <div class="gr-grid" style="display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(32px,5vw,64px);align-items:start">
+    <!-- left: confirmation -->
+    <div>
+      <div class="ri" style="width:84px;height:84px;border-radius:50%;background:rgba(61,125,255,.14);border:1px solid rgba(61,125,255,.4);display:flex;align-items:center;justify-content:center;animation:pop .7s cubic-bezier(.16,1,.3,1) both">
+        <svg width="42" height="42" viewBox="0 0 52 52" fill="none"><path d="M14 27l8 8 16-18" stroke="#7fa8ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="60" stroke-dashoffset="60" style="animation:draw .6s ease .5s forwards"/></svg>
+      </div>
+      <div class="ri" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:7px 14px;border-radius:999px;font-size:12.5px;font-weight:600;color:#9bbcff;animation-delay:.1s">
+        <span style="width:7px;height:7px;border-radius:50%;background:#3d7dff"></span>
+        <span data-en="Request received">Solicitud recibida</span>
+      </div>
+      <h1 class="ri" style="font-size:clamp(30px,4.5vw,50px);margin-top:18px;color:#fff;animation-delay:.18s" data-en="Thank you. We&apos;ve got your request.">Gracias. Recibimos tu solicitud.</h1>
+      <p class="ri" style="margin-top:18px;font-size:16.5px;color:#aab4cc;max-width:440px;animation-delay:.26s"><span data-svc-line data-en="A specialist who knows your industry will contact you in under 24 hours.">Un especialista que conoce tu industria te contactará en menos de 24 horas.</span></p>
+      <div class="ri" style="margin-top:28px;display:flex;flex-direction:column;gap:14px;animation-delay:.34s">
+        <div style="display:flex;align-items:flex-start;gap:13px">
+          <span style="width:30px;height:30px;border-radius:9px;background:rgba(61,125,255,.16);display:flex;align-items:center;justify-content:center;color:#7fa8ff;flex-shrink:0;font-weight:700;font-size:13px">1</span>
+          <div><div style="font-weight:600;color:#fff;font-size:15px" data-en="Pick a time now">Aparta un horario ahora</div><div style="font-size:13.5px;color:#8a95b4" data-en="Skip the wait — book your call on the calendar.">Evita la espera — agenda tu llamada en el calendario.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:13px">
+          <span style="width:30px;height:30px;border-radius:9px;background:rgba(61,125,255,.16);display:flex;align-items:center;justify-content:center;color:#7fa8ff;flex-shrink:0;font-weight:700;font-size:13px">2</span>
+          <div><div style="font-weight:600;color:#fff;font-size:15px" data-en="We prepare your case">Preparamos tu caso</div><div style="font-size:13.5px;color:#8a95b4" data-en="We review your details before the call so it&apos;s productive.">Revisamos tu información antes de la llamada para que sea productiva.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:13px">
+          <span style="width:30px;height:30px;border-radius:9px;background:rgba(61,125,255,.16);display:flex;align-items:center;justify-content:center;color:#7fa8ff;flex-shrink:0;font-weight:700;font-size:13px">3</span>
+          <div><div style="font-weight:600;color:#fff;font-size:15px" data-en="A plan, with no commitment">Un plan, sin compromiso</div><div style="font-size:13.5px;color:#8a95b4" data-en="Confidential information. We tell you honestly if we can help.">Un especialista en tu industria te responde en menos de 24 horas.</div></div>
+        </div>
+      </div>
+      <div class="ri" style="margin-top:30px;display:flex;flex-wrap:wrap;gap:11px;animation-delay:.42s">
+        <a href="mailto:contacto@labormx.com" class="cursor-target" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#fff;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;text-decoration:none">contacto@labormx.com</a>
+        <a href="https://wa.me/525500000000" class="cursor-target" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#fff;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;text-decoration:none">WhatsApp</a>
+      </div>
+    </div>
+    <!-- right: calendly -->
+    <div class="ri" style="animation-delay:.3s">
+      <div style="background:#fff;border-radius:22px;padding:10px;box-shadow:0 30px 70px rgba(0,0,0,.4);overflow:hidden">
+        <div style="padding:14px 16px 8px">
+          <h3 style="font-size:18px;color:#0e1730" data-en="Schedule your call">Agenda tu llamada</h3>
+          <p style="font-size:13px;color:#69728a;margin-top:4px" data-en="Choose the time that works best for you.">Elige el horario que mejor te funcione.</p>
+        </div>
+        <div class="calendly-direct-card">
+          <a href="https://calendly.com/labormx/llamada-30min?hide_gdpr_banner=1" target="_blank" rel="noopener" class="cursor-target calendly-main-link" data-en="Open Calendly →">Abrir Calendly →</a>
+          <p data-en="If the embedded calendar does not load, use the Calendly button above.">Si el calendario embebido no carga, usa el botón de Calendly.</p>
+        </div>
+        <iframe title="Calendly LaborMX" src="https://calendly.com/labormx/llamada-30min?hide_gdpr_banner=1&background_color=ffffff&primary_color=3d7dff" class="calendly-iframe" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer style="position:relative;z-index:5;border-top:1px solid rgba(255,255,255,.08);padding:26px clamp(20px,5vw,40px)">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;font-size:12.5px;color:#6b7798">
+    <span>© 2026 Labor Mexicana · labormx.com</span>
+    <span data-en="Built by Dinametra.com">Desarrollado por <a href="http://dinametra.com/" target="_blank" rel="noopener" style="color:#9aa6c8;font-weight:600">Dinametra.com</a></span>
+  </div>
+</footer>
+<script type="module" src="assets/labor.js"></script>
+</body>
+</html>
