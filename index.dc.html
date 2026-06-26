@@ -1,72 +1,503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LaborMX · Landings</title>
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/labor.css">
-</head>
-<body class="page-index">
-<div class="cursor-dot"></div>
-<div class="cursor-follower"></div>
-<canvas data-particles data-color="61,125,255" style="position:fixed;inset:0;width:100%;height:100%;opacity:.4;pointer-events:none;z-index:0"></canvas>
-<div style="position:fixed;top:-180px;left:50%;transform:translateX(-50%);width:700px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(61,125,255,.18),transparent 65%);pointer-events:none;z-index:0"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LaborMX · Landings</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/labor.css" />
+  </head>
+  <body class="page-index">
+    <div class="cursor-dot"></div>
+    <div class="cursor-follower"></div>
+    <canvas
+      data-particles
+      data-color="61,125,255"
+      style="
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        pointer-events: none;
+        z-index: 0;
+      "
+    ></canvas>
+    <div
+      style="
+        position: fixed;
+        top: -180px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 700px;
+        height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(61, 125, 255, 0.18),
+          transparent 65%
+        );
+        pointer-events: none;
+        z-index: 0;
+      "
+    ></div>
 
-<header style="position:relative;z-index:5;max-width:1180px;margin:0 auto;padding:26px clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between">
-  <img src="assets/labormx-white.png" alt="Labor Mexicana" style="height:30px;width:auto">
-  <button data-lang-toggle class="cursor-target" style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 13px;font-size:12.5px;font-weight:600;color:#fff;cursor:pointer;font-family:inherit">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-    <span data-lang-label>ES</span>
-  </button>
-</header>
+    <header
+      style="
+        position: relative;
+        z-index: 5;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 26px clamp(20px, 5vw, 40px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      "
+    >
+      <img
+        src="assets/labormx-white.png"
+        alt="Labor Mexicana"
+        style="height: 30px; width: auto"
+      />
+      <button
+        data-lang-toggle
+        class="cursor-target"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.14);
+          border-radius: 999px;
+          padding: 8px 13px;
+          font-size: 12.5px;
+          font-weight: 600;
+          color: #fff;
+          cursor: pointer;
+          font-family: inherit;
+        "
+      >
+        <svg
+          width="13"
+          height="13"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+        </svg>
+        <span data-lang-label>ES</span>
+      </button>
+    </header>
 
-<main style="position:relative;z-index:5;max-width:1180px;margin:0 auto;padding:clamp(30px,6vw,72px) clamp(20px,5vw,40px) 80px;text-align:center">
-  <div class="ri" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:8px 15px;border-radius:999px;font-size:13px;font-weight:600;color:#9bbcff">
-    <span style="width:7px;height:7px;border-radius:50%;background:#3d7dff"></span>
-    <span data-en="Labor Mexicana · +19 years in automotive manufacturing">Labor Mexicana · +19 años en manufactura automotriz</span>
-  </div>
-  <h1 class="ri" style="font-size:clamp(32px,5vw,58px);margin-top:22px;animation-delay:.1s;max-width:880px;margin-left:auto;margin-right:auto">
-    <span data-en="The industry, solving for the industry.">La industria, resolviendo para la industria.</span>
-  </h1>
-  <p class="ri" style="margin-top:18px;font-size:17px;color:#aab4cc;max-width:560px;margin-left:auto;margin-right:auto;animation-delay:.18s" data-en="Three specialized solutions for manufacturing. Choose the one that fits your operation.">Tres soluciones especializadas para manufactura. Elige la que se ajusta a tu operación.</p>
-
-  <div class="cards" style="margin-top:52px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:left">
-    <a href="Reclutamiento.dc.html" class="ri cursor-target" style="position:relative;text-decoration:none;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:30px;overflow:hidden;transition:transform .45s cubic-bezier(.16,1,.3,1),background .4s,border-color .4s;animation-delay:.26s" onmouseover="this.style.transform='translateY(-8px)';this.style.background='rgba(61,125,255,.1)';this.style.borderColor='rgba(61,125,255,.35)';this.querySelector('.ar').style.transform='translate(4px,-4px)'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(255,255,255,.04)';this.style.borderColor='rgba(255,255,255,.1)';this.querySelector('.ar').style.transform='none'">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start">
-        <div style="width:48px;height:48px;border-radius:13px;background:rgba(61,125,255,.16);display:flex;align-items:center;justify-content:center;color:#7fa8ff"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <span class="ar" style="color:#7fa8ff;font-size:22px;transition:transform .4s cubic-bezier(.16,1,.3,1)">↗</span>
+    <main
+      style="
+        position: relative;
+        z-index: 5;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: clamp(30px, 6vw, 72px) clamp(20px, 5vw, 40px) 80px;
+        text-align: center;
+      "
+    >
+      <div
+        class="ri"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          padding: 8px 15px;
+          border-radius: 999px;
+          font-size: 13px;
+          font-weight: 600;
+          color: #9bbcff;
+        "
+      >
+        <span
+          style="
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #3d7dff;
+          "
+        ></span>
+        <span data-en="Labor Mexicana · +19 years in automotive manufacturing"
+          >Labor Mexicana · +19 años en manufactura automotriz</span
+        >
       </div>
-      <h3 style="font-size:21px;color:#fff;margin-top:22px" data-en="Specialized Recruitment">Reclutamiento Especializado</h3>
-      <p style="font-size:14px;color:#aab4cc;margin-top:10px;line-height:1.6" data-en="Quality and engineering profiles your HR can&apos;t find — faster and at lower cost than a headhunter.">Perfiles de calidad e ingeniería que tu RH no encuentra — más rápido y a menor costo que un headhunter.</p>
-      <div style="margin-top:18px;font-size:12.5px;color:#7fa8ff;font-weight:600" data-en="For buyers of specialized talent">Para compradores de talento especializado</div>
-    </a>
-    <a href="BPO.dc.html" class="ri cursor-target" style="position:relative;text-decoration:none;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:30px;overflow:hidden;transition:transform .45s cubic-bezier(.16,1,.3,1),background .4s,border-color .4s;animation-delay:.34s" onmouseover="this.style.transform='translateY(-8px)';this.style.background='rgba(61,125,255,.1)';this.style.borderColor='rgba(61,125,255,.35)';this.querySelector('.ar').style.transform='translate(4px,-4px)'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(255,255,255,.04)';this.style.borderColor='rgba(255,255,255,.1)';this.querySelector('.ar').style.transform='none'">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start">
-        <div style="width:48px;height:48px;border-radius:13px;background:rgba(61,125,255,.16);display:flex;align-items:center;justify-content:center;color:#7fa8ff"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-        <span class="ar" style="color:#7fa8ff;font-size:22px;transition:transform .4s cubic-bezier(.16,1,.3,1)">↗</span>
-      </div>
-      <h3 style="font-size:21px;color:#fff;margin-top:22px" data-en="Quality BPO">BPO de Calidad</h3>
-      <p style="font-size:14px;color:#aab4cc;margin-top:10px;line-height:1.6" data-en="Quality containment in under 48 hours with an SLA. Inspection, sorting, CS1/CS2 and resident engineers.">Contención de calidad en menos de 48 horas con SLA. Inspección, sorteo, CS1/CS2 e ingenieros residentes.</p>
-      <div style="margin-top:18px;font-size:12.5px;color:#7fa8ff;font-weight:600" data-en="1 of 6 CS2 suppliers approved by GM">1 de 6 proveedores CS2 aprobados por GM</div>
-    </a>
-    <a href="Staffing.dc.html" class="ri cursor-target" style="position:relative;text-decoration:none;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:30px;overflow:hidden;transition:transform .45s cubic-bezier(.16,1,.3,1),background .4s,border-color .4s;animation-delay:.42s" onmouseover="this.style.transform='translateY(-8px)';this.style.background='rgba(61,125,255,.1)';this.style.borderColor='rgba(61,125,255,.35)';this.querySelector('.ar').style.transform='translate(4px,-4px)'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(255,255,255,.04)';this.style.borderColor='rgba(255,255,255,.1)';this.querySelector('.ar').style.transform='none'">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start">
-        <div style="width:48px;height:48px;border-radius:13px;background:rgba(61,125,255,.16);display:flex;align-items:center;justify-content:center;color:#7fa8ff"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l8 4v5c0 4.4-3 7.6-8 9-5-1.4-8-4.6-8-9V7z"/></svg></div>
-        <span class="ar" style="color:#7fa8ff;font-size:22px;transition:transform .4s cubic-bezier(.16,1,.3,1)">↗</span>
-      </div>
-      <h3 style="font-size:21px;color:#fff;margin-top:22px" data-en="Staffing &amp; Payroll">Staffing & Nómina</h3>
-      <p style="font-size:14px;color:#aab4cc;margin-top:10px;line-height:1.6" data-en="We become the legal employer. Staffing TT, payroll maquila and executive headhunting — zero legal risk.">Somos el patrón legal. Staffing TT, maquila de nómina y headhunting ejecutivo — cero riesgo legal.</p>
-      <div style="margin-top:18px;font-size:12.5px;color:#7fa8ff;font-weight:600" data-en="1 of 40 with correct REPSE">1 de 40 con REPSE correcto</div>
-    </a>
-  </div>
+      <h1
+        class="ri"
+        style="
+          font-size: clamp(32px, 5vw, 58px);
+          margin-top: 22px;
+          animation-delay: 0.1s;
+          max-width: 880px;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      >
+        <span data-en="The industry, solving for the industry."
+          >La industria, resolviendo para la industria.</span
+        >
+      </h1>
+      <p
+        class="ri"
+        style="
+          margin-top: 18px;
+          font-size: 17px;
+          color: #aab4cc;
+          max-width: 560px;
+          margin-left: auto;
+          margin-right: auto;
+          animation-delay: 0.18s;
+        "
+        data-en="Three specialized solutions for manufacturing. Choose the one that fits your operation."
+      >
+        Tres soluciones especializadas para manufactura. Elige la que se ajusta
+        a tu operación.
+      </p>
 
-  <div class="ri" style="margin-top:50px;font-size:13px;color:#6b7798;animation-delay:.5s">
-    <span data-en="Built by Dinametra.com">Desarrollado por</span> <a href="http://dinametra.com/" target="_blank" rel="noopener" style="color:#9aa6c8;font-weight:600">Dinametra.com</a>
-  </div>
-</main>
-<script type="module" src="assets/labor.js"></script>
-</body>
+      <div
+        class="cards"
+        style="
+          margin-top: 52px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          text-align: left;
+        "
+      >
+        <a
+          href="Reclutamiento.dc.html"
+          class="ri cursor-target"
+          style="
+            position: relative;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            overflow: hidden;
+            transition:
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.4s,
+              border-color 0.4s;
+            animation-delay: 0.26s;
+          "
+          onmouseover="
+            this.style.transform = 'translateY(-8px)';
+            this.style.background = 'rgba(61,125,255,.1)';
+            this.style.borderColor = 'rgba(61,125,255,.35)';
+            this.querySelector('.ar').style.transform = 'translate(4px,-4px)';
+          "
+          onmouseout="
+            this.style.transform = 'translateY(0)';
+            this.style.background = 'rgba(255,255,255,.04)';
+            this.style.borderColor = 'rgba(255,255,255,.1)';
+            this.querySelector('.ar').style.transform = 'none';
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+            "
+          >
+            <div
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 13px;
+                background: rgba(61, 125, 255, 0.16);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #7fa8ff;
+              "
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+            </div>
+            <span
+              class="ar"
+              style="
+                color: #7fa8ff;
+                font-size: 22px;
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+              "
+              >↗</span
+            >
+          </div>
+          <h3
+            style="font-size: 21px; color: #fff; margin-top: 22px"
+            data-en="Specialized Recruitment"
+          >
+            Reclutamiento Especializado
+          </h3>
+          <p
+            style="
+              font-size: 14px;
+              color: #aab4cc;
+              margin-top: 10px;
+              line-height: 1.6;
+            "
+            data-en="Quality and engineering profiles your HR can't find — faster and at lower cost than a headhunter."
+          >
+            Perfiles de calidad e ingeniería que tu RH no encuentra — más rápido
+            y a menor costo que un headhunter.
+          </p>
+          <div
+            style="
+              margin-top: 18px;
+              font-size: 12.5px;
+              color: #7fa8ff;
+              font-weight: 600;
+            "
+            data-en="For buyers of specialized talent"
+          >
+            Para compradores de talento especializado
+          </div>
+        </a>
+        <a
+          href="BPO.dc.html"
+          class="ri cursor-target"
+          style="
+            position: relative;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            overflow: hidden;
+            transition:
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.4s,
+              border-color 0.4s;
+            animation-delay: 0.34s;
+          "
+          onmouseover="
+            this.style.transform = 'translateY(-8px)';
+            this.style.background = 'rgba(61,125,255,.1)';
+            this.style.borderColor = 'rgba(61,125,255,.35)';
+            this.querySelector('.ar').style.transform = 'translate(4px,-4px)';
+          "
+          onmouseout="
+            this.style.transform = 'translateY(0)';
+            this.style.background = 'rgba(255,255,255,.04)';
+            this.style.borderColor = 'rgba(255,255,255,.1)';
+            this.querySelector('.ar').style.transform = 'none';
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+            "
+          >
+            <div
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 13px;
+                background: rgba(61, 125, 255, 0.16);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #7fa8ff;
+              "
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <path d="M9 11l3 3L22 4" />
+                <path
+                  d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                />
+              </svg>
+            </div>
+            <span
+              class="ar"
+              style="
+                color: #7fa8ff;
+                font-size: 22px;
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+              "
+              >↗</span
+            >
+          </div>
+          <h3
+            style="font-size: 21px; color: #fff; margin-top: 22px"
+            data-en="Quality BPO"
+          >
+            BPO de Calidad
+          </h3>
+          <p
+            style="
+              font-size: 14px;
+              color: #aab4cc;
+              margin-top: 10px;
+              line-height: 1.6;
+            "
+            data-en="Quality containment in under 48 hours with an SLA. Inspection, sorting, CS1/CS2 and resident engineers."
+          >
+            Contención de calidad en menos de 48 horas con SLA. Inspección,
+            sorteo, CS1/CS2 e ingenieros residentes.
+          </p>
+          <div
+            style="
+              margin-top: 18px;
+              font-size: 12.5px;
+              color: #7fa8ff;
+              font-weight: 600;
+            "
+            data-en="1 of 6 CS2 suppliers approved by GM"
+          >
+            1 de 6 proveedores CS2 aprobados por GM
+          </div>
+        </a>
+        <a
+          href="Staffing.dc.html"
+          class="ri cursor-target"
+          style="
+            position: relative;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            overflow: hidden;
+            transition:
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.4s,
+              border-color 0.4s;
+            animation-delay: 0.42s;
+          "
+          onmouseover="
+            this.style.transform = 'translateY(-8px)';
+            this.style.background = 'rgba(61,125,255,.1)';
+            this.style.borderColor = 'rgba(61,125,255,.35)';
+            this.querySelector('.ar').style.transform = 'translate(4px,-4px)';
+          "
+          onmouseout="
+            this.style.transform = 'translateY(0)';
+            this.style.background = 'rgba(255,255,255,.04)';
+            this.style.borderColor = 'rgba(255,255,255,.1)';
+            this.querySelector('.ar').style.transform = 'none';
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+            "
+          >
+            <div
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 13px;
+                background: rgba(61, 125, 255, 0.16);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #7fa8ff;
+              "
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <path d="M12 3l8 4v5c0 4.4-3 7.6-8 9-5-1.4-8-4.6-8-9V7z" />
+              </svg>
+            </div>
+            <span
+              class="ar"
+              style="
+                color: #7fa8ff;
+                font-size: 22px;
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+              "
+              >↗</span
+            >
+          </div>
+          <h3
+            style="font-size: 21px; color: #fff; margin-top: 22px"
+            data-en="Staffing &amp; Payroll"
+          >
+            Staffing & Nómina
+          </h3>
+          <p
+            style="
+              font-size: 14px;
+              color: #aab4cc;
+              margin-top: 10px;
+              line-height: 1.6;
+            "
+            data-en="We become the legal employer. Staffing TT, payroll maquila and executive headhunting — zero legal risk."
+          >
+            Somos el patrón legal. Staffing TT, maquila de nómina y headhunting
+            ejecutivo — cero riesgo legal.
+          </p>
+          <div
+            style="
+              margin-top: 18px;
+              font-size: 12.5px;
+              color: #7fa8ff;
+              font-weight: 600;
+            "
+            data-en="1 of 40 with correct REPSE"
+          >
+            1 de 40 con REPSE correcto
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="ri"
+        style="
+          margin-top: 50px;
+          font-size: 13px;
+          color: #6b7798;
+          animation-delay: 0.5s;
+        "
+      >
+        <span data-en="Built by Dinametra.com">Desarrollado por</span>
+        <a
+          href="http://dinametra.com/"
+          target="_blank"
+          rel="noopener"
+          style="color: #9aa6c8; font-weight: 600"
+          >Dinametra.com</a
+        >
+      </div>
+    </main>
+    <script type="module" src="assets/labor.js"></script>
+  </body>
 </html>
