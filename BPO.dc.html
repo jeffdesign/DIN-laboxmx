@@ -89,18 +89,24 @@
               <input required name="tel" placeholder="+52 55 0000 0000" data-en-ph="+52 55 0000 0000" aria-label="Teléfono o WhatsApp" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#141a2e">
             </div>
             <select required name="situacion" aria-label="Situación" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#46506a">
-              <option value="" disabled selected data-en="What&apos;s the situation?">¿Cuál es la situación?</option>
-              <option data-en="Active CS2 / line-stop risk">CS2 activo / riesgo de paro de línea</option>
-              <option data-en="Chronic scrap">Scrap crónico</option>
-              <option data-en="New launch (APQP / Safe Launch)">Lanzamiento nuevo (APQP / Safe Launch)</option>
-              <option data-en="Quality liaison / resident engineers">Quality liaison / ingenieros residentes</option>
-              <option data-en="Remanufacturing (REMAN)">Remanufactura (REMAN)</option>
+              <option value="" disabled selected>¿Qué necesitas resolver?</option>
+              <option>CS2 activo o riesgo de paro de línea</option>
+              <option>Scrap crónico o problemas de productividad</option>
+              <option>Lanzamiento nuevo (APQP / Safe Launch)</option>
+              <option>Quality liaison o ingeniero residente</option>
+              <option>Inspección de recibo o sorteo recurrente</option>
             </select>
             <select required name="ubicacion" aria-label="Ubicación" style="font-family:inherit;font-size:14px;padding:13px 15px;border:1px solid #dde2ee;border-radius:11px;background:#fafbfe;outline:none;color:#46506a">
-              <option value="" disabled selected data-en="Plant location">Ubicación de la planta</option>
-              <option data-en="Mexico">México</option>
-              <option>USA (TX · MI · CA · IL)</option>
+              <option value="" disabled selected>Cuántas personas necesitas en piso?</option>
+              <option>1-5</option>
+              <option>6-15</option>
+              <option>16-50</option>
+              <option>50+</option>
+              <option>Aún no lo sé</option>
+              <option>Otro</option>
             </select>
+
+
             <label style="display:flex;align-items:flex-start;gap:9px;font-size:12px;color:#69728a;cursor:pointer;margin-top:2px">
               <input required type="checkbox" style="margin-top:2px;accent-color:#3d7dff">
               <span data-en="I accept the privacy notice and authorize contact about my request.">Acepto el aviso de privacidad y autorizo el contacto sobre mi solicitud.</span>
