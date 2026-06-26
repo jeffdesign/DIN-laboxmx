@@ -4295,8 +4295,12 @@ form[data-lead-form] input[type="hidden"] {
   margin: auto;
 }
 .hero-img {
-  width: 600px;
+  width: 700px;
   height: auto;
   object-fit: contain;
   mask-image: linear-gradient(180deg, white 60%, transparent);
+}
+
+/* LOGO HERO */
+.logo-sequence {
 }
