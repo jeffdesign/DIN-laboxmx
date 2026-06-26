@@ -4239,7 +4239,7 @@ form[data-lead-form].is-submitting button[type="submit"] {
 form[data-lead-form] input[type="hidden"] {
   display: none !important;
 }
-
+/** BPO **/
 /* SERVICIOS V2 */
 .services-section {
   display: flex;
@@ -4300,3 +4300,5 @@ form[data-lead-form] input[type="hidden"] {
   object-fit: contain;
   mask-image: linear-gradient(180deg, white 60%, transparent);
 }
+
+/** Reclutamiento **/

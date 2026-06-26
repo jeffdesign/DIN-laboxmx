@@ -368,21 +368,7 @@
           pointer-events: none;
         "
       ></div>
-      <div
-        class="hero-grid nexto-inspired hero-reference-v5"
-        data-tilt-area
-        style="
-          position: relative;
-          max-width: 1180px;
-          margin: 0 auto;
-          padding: clamp(40px, 6vw, 84px) clamp(20px, 5vw, 40px)
-            clamp(56px, 7vw, 96px);
-          display: grid;
-          grid-template-columns: 1.05fr 0.95fr;
-          gap: clamp(34px, 5vw, 64px);
-          align-items: center;
-        "
-      >
+      <div class="hero-grid-V2" data-tilt-area style="">
         <!-- left copy -->
         <div>
           <h1
@@ -390,7 +376,8 @@
             style="
               font-size: clamp(31px, 4.6vw, 54px);
               margin-top: 22px;
-              color: #0e1730;
+              color: #fff;
+              padding-right: 20px;
             "
           >
             <span
@@ -419,7 +406,7 @@
             style="
               margin-top: 22px;
               font-size: clamp(15px, 1.5vw, 17.5px);
-              color: #46506a;
+              color: #fff;
               max-width: 520px;
               opacity: 0;
               transform: translateY(28px);
@@ -812,6 +799,169 @@
       </div>
     </section>
 
+    <!-- ============ SOCIAL PROOF (LOGOS) ============ -->
+    <section
+      class="client-logo-carousel"
+      aria-label="Logos de clientes"
+      style="
+        padding: clamp(52px, 6vw, 84px) 0;
+        background: #0c1430;
+        overflow: hidden;
+      "
+    >
+      <div
+        style="
+          max-width: 1180px;
+          margin: 0 auto;
+          padding: 0 clamp(20px, 5vw, 40px);
+          text-align: center;
+        "
+      >
+        <h2
+          class="split-title"
+          style="font-size: clamp(22px, 2.9vw, 34px); color: #fff"
+        >
+          <span
+            class="line-wrap"
+            style="display: block; overflow: hidden; padding-bottom: 0.06em"
+            ><span
+              class="line"
+              style="
+                display: block;
+                transform: translateY(112%);
+                filter: blur(6px);
+                opacity: 0;
+                transition:
+                  transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                  filter 0.9s ease,
+                  opacity 0.9s ease;
+              "
+              >Operamos calidad dentro de plantas que no toleran fallas</span
+            ></span
+          >
+        </h2>
+      </div>
+      <div
+        class="logo-mask"
+        style="
+          margin-top: 42px;
+          position: relative;
+          -webkit-mask-image: linear-gradient(
+            90deg,
+            transparent,
+            #000 8%,
+            #000 92%,
+            transparent
+          );
+          mask-image: linear-gradient(
+            90deg,
+            transparent,
+            #000 8%,
+            #000 92%,
+            transparent
+          );
+        "
+      >
+        <div
+          class="logo-track single-logo-track"
+          style="
+            display: flex;
+            width: max-content;
+            align-items: center;
+            gap: 64px;
+            padding-left: 64px;
+          "
+        >
+          <img
+            src="assets/clients/aptiv.webp"
+            alt="Aptiv"
+            style="height: 24px; width: auto"
+          />
+          <img
+            src="assets/clients/lear.webp"
+            alt="Lear"
+            style="height: 34px; width: auto"
+          />
+          <img
+            src="assets/clients/magna.webp"
+            alt="Magna"
+            style="height: 30px; width: auto"
+          />
+          <img
+            src="assets/clients/adient.webp"
+            alt="Adient"
+            style="height: 34px; width: auto"
+          />
+          <img
+            src="assets/clients/martinrea.png"
+            alt="Martinrea"
+            style="height: 48px; width: auto"
+          />
+
+          <img
+            src="assets/clients/mabe.webp"
+            alt="Mabe"
+            style="height: 26px; width: auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section style="background: #0c1430; overflow: hidden; padding: 18px 0">
+      <div
+        style="display: flex; width: max-content; white-space: nowrap"
+        class="marquee-track"
+      >
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 34px;
+            padding-right: 34px;
+            font-family: &quot;Schibsted Grotesk&quot;;
+            font-size: 17px;
+            font-weight: 600;
+            color: #3a4a78;
+            letter-spacing: 0.02em;
+          "
+        >
+          <span>CALIDAD</span><span style="color: #3d7dff">◆</span
+          ><span>INGENIERÍA DE PROCESO</span
+          ><span style="color: #3d7dff">◆</span><span>SQA / SQE</span
+          ><span style="color: #3d7dff">◆</span><span>RED X · 8D · 6σ</span
+          ><span style="color: #3d7dff">◆</span><span>APQP / PPAP</span
+          ><span style="color: #3d7dff">◆</span><span>GD&amp;T</span
+          ><span style="color: #3d7dff">◆</span><span>LEAN · SIX SIGMA</span
+          ><span style="color: #3d7dff">◆</span><span>SQE BILINGÜE</span
+          ><span style="color: #3d7dff">◆</span>
+        </div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 34px;
+            padding-right: 34px;
+            font-family: &quot;Schibsted Grotesk&quot;;
+            font-size: 17px;
+            font-weight: 600;
+            color: #3a4a78;
+            letter-spacing: 0.02em;
+          "
+        >
+          <span>CALIDAD</span><span style="color: #3d7dff">◆</span
+          ><span>INGENIERÍA DE PROCESO</span
+          ><span style="color: #3d7dff">◆</span><span>SQA / SQE</span
+          ><span style="color: #3d7dff">◆</span><span>RED X · 8D · 6σ</span
+          ><span style="color: #3d7dff">◆</span><span>APQP / PPAP</span
+          ><span style="color: #3d7dff">◆</span><span>GD&amp;T</span
+          ><span style="color: #3d7dff">◆</span><span>LEAN · SIX SIGMA</span
+          ><span style="color: #3d7dff">◆</span><span>SQE BILINGÜE</span
+          ><span style="color: #3d7dff">◆</span>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ STATS BAR ============ -->
     <section
       style="
@@ -967,184 +1117,6 @@
           >
             con período definido por puesto
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SOCIAL PROOF (LOGOS) ============ -->
-    <section
-      class="client-logo-carousel"
-      aria-label="Logos de clientes"
-      style="
-        padding: clamp(52px, 6vw, 84px) 0;
-        background: #f5f7fb;
-        border-bottom: 1px solid #e7eaf3;
-        overflow: hidden;
-      "
-    >
-      <div
-        style="
-          max-width: 1180px;
-          margin: 0 auto;
-          padding: 0 clamp(20px, 5vw, 40px);
-          text-align: center;
-        "
-      >
-        <h2
-          class="split-title"
-          style="font-size: clamp(22px, 2.9vw, 34px); color: #0e1730"
-        >
-          <span
-            class="line-wrap"
-            style="display: block; overflow: hidden; padding-bottom: 0.06em"
-            ><span
-              class="line"
-              style="
-                display: block;
-                transform: translateY(112%);
-                filter: blur(6px);
-                opacity: 0;
-                transition:
-                  transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-                  filter 0.9s ease,
-                  opacity 0.9s ease;
-              "
-              >Operamos calidad dentro de plantas que no toleran fallas</span
-            ></span
-          >
-        </h2>
-      </div>
-      <div
-        class="logo-mask"
-        style="
-          margin-top: 42px;
-          position: relative;
-          -webkit-mask-image: linear-gradient(
-            90deg,
-            transparent,
-            #000 8%,
-            #000 92%,
-            transparent
-          );
-          mask-image: linear-gradient(
-            90deg,
-            transparent,
-            #000 8%,
-            #000 92%,
-            transparent
-          );
-        "
-      >
-        <div
-          class="logo-track single-logo-track"
-          style="
-            display: flex;
-            width: max-content;
-            align-items: center;
-            gap: 64px;
-            padding-left: 64px;
-          "
-        >
-          <img
-            src="assets/clients/gm.png"
-            alt="GM"
-            style="height: 46px; width: auto"
-          />
-          <img
-            src="assets/clients/aptiv.webp"
-            alt="Aptiv"
-            style="height: 24px; width: auto"
-          />
-          <img
-            src="assets/clients/lear.webp"
-            alt="Lear"
-            style="height: 34px; width: auto"
-          />
-          <img
-            src="assets/clients/magna.webp"
-            alt="Magna"
-            style="height: 30px; width: auto"
-          />
-          <img
-            src="assets/clients/adient.webp"
-            alt="Adient"
-            style="height: 34px; width: auto"
-          />
-          <img
-            src="assets/clients/martinrea.png"
-            alt="Martinrea"
-            style="height: 48px; width: auto"
-          />
-          <img
-            src="assets/clients/john-deere.webp"
-            alt="John Deere"
-            style="height: 42px; width: auto"
-          />
-          <img
-            src="assets/clients/forvia.webp"
-            alt="Forvia"
-            style="height: 22px; width: auto"
-          />
-          <img
-            src="assets/clients/mabe.webp"
-            alt="Mabe"
-            style="height: 26px; width: auto"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ MARQUEE ============ -->
-    <section style="background: #0c1430; overflow: hidden; padding: 18px 0">
-      <div
-        style="display: flex; width: max-content; white-space: nowrap"
-        class="marquee-track"
-      >
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            gap: 34px;
-            padding-right: 34px;
-            font-family: &quot;Schibsted Grotesk&quot;;
-            font-size: 17px;
-            font-weight: 600;
-            color: #3a4a78;
-            letter-spacing: 0.02em;
-          "
-        >
-          <span>CALIDAD</span><span style="color: #3d7dff">◆</span
-          ><span>INGENIERÍA DE PROCESO</span
-          ><span style="color: #3d7dff">◆</span><span>SQA / SQE</span
-          ><span style="color: #3d7dff">◆</span><span>RED X · 8D · 6σ</span
-          ><span style="color: #3d7dff">◆</span><span>APQP / PPAP</span
-          ><span style="color: #3d7dff">◆</span><span>GD&amp;T</span
-          ><span style="color: #3d7dff">◆</span><span>LEAN · SIX SIGMA</span
-          ><span style="color: #3d7dff">◆</span><span>SQE BILINGÜE</span
-          ><span style="color: #3d7dff">◆</span>
-        </div>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            gap: 34px;
-            padding-right: 34px;
-            font-family: &quot;Schibsted Grotesk&quot;;
-            font-size: 17px;
-            font-weight: 600;
-            color: #3a4a78;
-            letter-spacing: 0.02em;
-          "
-        >
-          <span>CALIDAD</span><span style="color: #3d7dff">◆</span
-          ><span>INGENIERÍA DE PROCESO</span
-          ><span style="color: #3d7dff">◆</span><span>SQA / SQE</span
-          ><span style="color: #3d7dff">◆</span><span>RED X · 8D · 6σ</span
-          ><span style="color: #3d7dff">◆</span><span>APQP / PPAP</span
-          ><span style="color: #3d7dff">◆</span><span>GD&amp;T</span
-          ><span style="color: #3d7dff">◆</span><span>LEAN · SIX SIGMA</span
-          ><span style="color: #3d7dff">◆</span><span>SQE BILINGÜE</span
-          ><span style="color: #3d7dff">◆</span>
         </div>
       </div>
     </section>
